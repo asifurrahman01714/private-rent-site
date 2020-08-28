@@ -1,0 +1,299 @@
+html{scroll-behavior: smooth;}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;
+    background: #f7f7f7;
+}
+nav{
+    width: 80%;
+    margin: auto;
+    padding-top: 28px;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li{
+    float: left;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px;
+}
+nav ul li a img{
+    
+height: 32px;
+    
+width: 35px;
+}
+
+nav ul li a:hover{
+    color: aliceblue;
+    background-color:black;
+    transition: .6s ease all;
+}
+
+
+.home{
+
+/* background: red; */
+
+height: 400px;
+
+/* width: 80%; */
+
+text-align: center;
+
+margin-top: 50px;
+}
+.home h1{
+    
+text-transform: uppercase;
+    
+font-size: 82px;
+    
+font-weight: 900;
+    
+position: relative;
+    
+color: #d2bcbc;
+}
+.home h1 span{
+    
+position: absolute;
+    
+font-size: 40px;
+    
+left: 42%;
+    
+color: #696993;
+    
+margin-top: 10px;
+    
+font-weight: 600;
+}
+.home h2{
+    
+text-transform: uppercase;
+    
+font-size: -webkit-xxx-large;
+    
+margin: 40px 0;
+    
+color: #d2bcbc;
+}
+#buy{
+
+margin-right: 12px;
+}
+#rent{
+    
+margin-right: 12px;
+    
+margin-left: 30px;
+}
+
+.submit{
+    
+margin: 30px;
+    
+padding: 6px 17px;
+    
+text-transform: uppercase;
+    
+font-size: 20px;
+    
+border: 1px solid;
+    
+border-radius: 15px;
+}
+
+.book{
+  height: 500px;
+
+}
+.book h1{
+    
+text-align: center;
+    
+text-transform: uppercase;
+    
+font-size: 50px;
+    
+color: #d2bcbc;
+    
+margin-bottom: 40px 0px;
+    
+margin-bottom: 50px;
+}
+.b1{
+    height: 302px;
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 44px;
+}
+.b2{
+    height: 302px;
+    
+    width: 30%;
+    float: left;
+}
+.b3{
+    height: 302px;
+    width: 30%;
+    float: right;
+    margin-right: 20px;
+}
+.book img{
+    
+width: 100%;
+}
+
+
+
+
+
+.camera{
+    height: 500px;
+  
+  }
+  .camera h1{
+      
+  text-align: center;
+      
+  text-transform: uppercase;
+      
+  font-size: 50px;
+      
+  color: #d2bcbc;
+      
+  margin-bottom: 40px 0px;
+      
+  margin-bottom: 50px;
+  }
+  .c1{
+      height: 302px;
+      width: 30%;
+      float: left;
+      margin-left: 20px;
+      margin-right: 44px;
+  }
+  .c2{
+      height: 302px;
+      
+      width: 30%;
+      float: left;
+  }
+  .c3{
+      height: 302px;
+      width: 30%;
+      float: right;
+      margin-right: 20px;
+  }
+  .camera img{
+      
+  width: 100%;
+  }
+
+
+
+
+
+
+
+
+  
+.buy_rent{
+    height: 500px;
+  
+  }
+  .buy_rent h1{
+      
+  text-align: center;   
+  text-transform: uppercase;   
+  font-size: 50px;  
+  color: #d2bcbc;  
+  margin-bottom: 40px 0px;  
+  margin-bottom: 50px;
+  }
+  .purchased{
+      height: 302px;
+      width: 30%;
+      float: left;
+      margin-left: 20px;
+      margin-right: 44px;
+  }
+  .purchased h1{
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #9c7c7c;
+    margin-bottom: 40px 0px;
+    margin-bottom: 50px;
+  }
+ 
+  .date{
+      height: 302px;
+      width: 30%;
+      float: right;
+      margin-right: 20px;
+  }
+  .buy_rent img{
+      
+  width: 100%;
+  }
+  #check{
+
+margin-left: 65px;
+margin-right: 15px;
+margin-bottom: 12px;
+
+}
+
+#date{
+    margin-left: 120px;
+}
+.date h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #9c7c7c;
+    margin-bottom: 40px 0px;
+    margin-bottom: 50px;
+}
+.amount{
+    height: 200px;
+}
+.amount h1{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #9c7c7c;
+    margin-bottom: 40px 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#amount{
+    
+border: none;
+    
+border-bottom: 1px solid;
+}
+.confirm{
+  padding: 6px 17px;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin-left: 600px;
+}
+.confirm a{
+    text-decoration: none;
+}
