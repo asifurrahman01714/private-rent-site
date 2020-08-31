@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- alert cdn from sweet alert website -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Know And Click</title>
@@ -14,20 +16,87 @@
         <div class="form_content">
             <h1>Know and click</h1>
             <form action="">
-                <label for="fname" >Name</label><br>
-                <input type="text" id="fname" placeholder="Enter Your Name" name="fname" size="15" maxlength="15" required><br>
+                <label for="username" >Name</label><br>
+                <i style="margin-right: 5px;" class="fa fa-user" aria-hidden="true"></i><input type="text" id="username" placeholder="Enter Your Name" name="fname" size="15" maxlength="15" required><br>
                 <!-- size can be controled with width and height -->
-                <label for="pass">password</label><br>
-                <input type="password" id="pass" placeholder="Enter Your Password" name="pass" size="15" maxlength="15" required><br>
-                
-                <button class="login">Log In</button><br>
+                <label for="password">password</label><br>
+                <i style="margin-right: 2px;" class="fa fa-key" aria-hidden="true"></i><input type="password" id="password" placeholder="Enter Your Password" name="pass" size="15" maxlength="15" required><br>
+                <span class="eye" onclick="iconShowltide();">
+                    <i id="enable" class="fa fa-eye" aria-hidden="true"></i>
+                    <i id="disable" class="fa fa-eye-slash" aria-hidden="true"></i>
+                </span>
+
+                <input class="login" type="button" value="login" name="loginbutton" onclick="validation();"><br>
+                <!-- <button class="login" name="loginbtn">Log In</button><br> -->
                 <button class="register"><a href="registration.html">register</a> </button><br>
                 <!-- here submit will be writtern otherwise the form will not be worked -->
             </form><br>
-        </div>
-
-               
+        </div>             
     </div>
     
+    <script>
+
+        function iconShowltide(){
+            var x =document.getElementById("password");
+            var y =document.getElementById("enable");
+            var z =document.getElementById("disable");
+
+            if (x.type === 'password') {
+                x.type ="text";
+                y.style.display ="block";
+                z.style.display =" none";
+                
+            }
+
+            else  {
+                x.type ="password";
+                y.style.display ="none";
+                z.style.display =" block";
+                
+            }
+
+
+        }
+
+        function validation(){
+
+            var user= "Asif Ur Rahman"
+            var pass= "01714"
+
+            var userName=document.getElementById("username").value;
+            var userPass=document.getElementById("password").value;
+
+            if ((user==userName) && (pass==userPass)) {
+                swal({
+
+                    title :"Login Successfull...",
+                    title :"Thank You!",
+                    icon :"success",
+                })
+            }
+
+            else if ((userName.length<=0) && (userPass.length<=0)) {
+                swal({
+
+                    title :"Login Failed!...",
+                    title :"Username & Password is not fullfilled",
+                    icon :"info",
+                })
+            }
+
+            else {
+                swal({
+
+                    title :"Login Failed...",
+                    title :"Please try again!",
+                    icon :"error!",
+                })
+            }
+
+        }
+
+
+    </script>
+
 </body>
 </html>

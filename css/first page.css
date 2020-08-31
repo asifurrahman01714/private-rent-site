@@ -1,3 +1,5 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
 html{scroll-behavior: smooth;}
 *{
     margin: 0;
@@ -22,12 +24,7 @@ form {
     width: 100%;
     text-align: center;
 }
-form input{    
-width: 211px;    
-height: 24px;
-    
-margin: 2px;
-}
+form input{width: 211px;height: 24px;margin: 2px;position: relative;}
 
 label{
     text-transform: uppercase;
@@ -83,4 +80,14 @@ border: 1px solid black;
 }
 .register a{
     text-decoration: none;
+}
+
+.eye{
+    position: absolute;
+    top: 38%;
+    right: 42%;
+    transform: translate(-10%, 12%);
+}
+#enable{
+    display: none;
 }
